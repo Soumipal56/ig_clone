@@ -13,6 +13,7 @@ export const usePost = () => {
         const data = await getFeed()
         setFeed(data.posts)
         setLoading(false)
+        
     }
 
     return { loading, feed, post, handleGetFeed }
