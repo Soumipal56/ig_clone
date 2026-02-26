@@ -1,15 +1,16 @@
 import React from 'react'
-import '../nav.scss'
-import {useNavigate} from 'react-router'
+import "../nav.scss"
+import { useNavigate } from 'react-router'
 
 const Nav = () => {
-  const navigate = useNavigate()  
+    const navigate = useNavigate()
+     
   return (
-    <nav className='nav-bar'>
-        <p>Insta</p>
+    <nav className='nav-bar' >
+        <p>Instagram</p>
         <button
-        onClick={()=>{navigate("/create-post")}} 
-        className='button primary-button'>new post</button>
+         onClick={()=>{navigate("/create-post")}}
+         className='button primary-button' >New post</button>
     </nav>
   )
 }
